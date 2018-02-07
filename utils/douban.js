@@ -4,7 +4,7 @@ var url = 'https://douban.uieee.com/v2/movie';
 var fetch = require('./fetch')
 
 function fetchApi(type, params) {
-  return fetch(URI, type, params);
+  return fetch(url, type, params);
 }
 
 function find(type) {
