@@ -1,0 +1,4 @@
+.movie-image{
+  width: 10rpx;
+  height: 20rpx;
+}

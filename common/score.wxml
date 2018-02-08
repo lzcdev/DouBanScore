@@ -1,0 +1,11 @@
+<template name="score">
+  <text>{{item.title}}</text>
+  <view class='boar' bindtap='goDetail'>
+    <image class='movie-image' src='{{item.cover.url}}'></image>
+    <text class='movie-title'></text>
+    <view class='movie-rate'>
+      <view class='star-'>{{item.rating.value}}</view>
+    </view>
+    <view></view>
+  </view>
+</template>
