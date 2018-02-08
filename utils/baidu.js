@@ -21,4 +21,4 @@ function getCityName() {
   })
 }
 
-module.export = {getCityName: getCityName};
+module.exports = { getCityName: getCityName};

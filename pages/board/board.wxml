@@ -1,2 +1,18 @@
-<!--pages/board/board.wxml-->
-<text>pages/board/board.wxml</text>
+<import src ="../../common/score.wxml" />
+
+<view class="container">
+  <view class='searchbar'>
+    <view class='input'>
+      <input placeholder='搜索' placeholder-style="color: #ccc; font-size: 30rpx;"></input>
+    </view>
+  </view>
+
+  <view class='board' wx:for="{{board}}" wx:key="key">
+    <view class='' style="flex-direction:row">
+        <template is="score" data="{{item}}"/>
+    </view>
+
+  </view>
+
+
+</view>

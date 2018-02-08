@@ -16,6 +16,7 @@ Page({
   getCache: function getCache() {
     return new Promise(function (resolve) {
       app.wechat.getStorage('last_splash_data').then(function (res) {
+        // console.log(res)
         var _res$data = res.data,
           movies = _res$data.movies,
           expires = _res$data.expires;

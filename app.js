@@ -1,4 +1,4 @@
-'use strit'
+'use strict'
 
 var wechat = require('./utils/wechat.js');
 
@@ -24,7 +24,7 @@ App({
 
     wechat.getLocation().then(function(res) {
       var latitude = res.latitude, longitude = res.longitude;
-      return baidu.getCityName(latitude, longitude)
+      return baidu.getCityName(latitude, longitude);
     }).then(function(name) {
       that.data.currentCity = name.replace('市', '');
       console.log('currentCity:', that.data.currentCity)
